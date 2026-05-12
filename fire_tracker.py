@@ -41,10 +41,8 @@ st.set_page_config(page_title="Punjab Fire Tracker", layout="wide", initial_side
 
 hide_st_style = """
     <style>
-    [data-testid="stToolbar"] {visibility: hidden !important;}
-    footer {visibility: hidden !important;}
-    header {visibility: visible !important;}
-    [data-testid="collapsedControl"] {visibility: visible !important;}
+    [data-testid="stToolbar"] {display: none !important;}
+    footer {display: none !important;}
     </style>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
