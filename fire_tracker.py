@@ -45,11 +45,8 @@ hide_st_style = """
     footer {visibility: hidden !important;}
     </style>
 """
-
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.markdown(hide_st_style, unsafe_allow_html=True)
-st.markdown(hide_header_style, unsafe_allow_html=True)
 @st.cache_data(ttl=3600)
 def fetch_punjab_fires(api_key):
     source = 'VIIRS_SNPP_NRT'
