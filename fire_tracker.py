@@ -41,12 +41,12 @@ st.set_page_config(page_title="Punjab Fire Tracker", layout="wide")
 
 hide_st_style = """
     <style>
-    /* Hides the right-side GitHub & Share buttons */
     [data-testid="stToolbar"] {visibility: hidden !important;}
-    /* Hides the 'Made with Streamlit' footer */
     footer {visibility: hidden !important;}
     </style>
 """
+
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.markdown(hide_st_style, unsafe_allow_html=True)
 st.markdown(hide_header_style, unsafe_allow_html=True)
