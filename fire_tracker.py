@@ -41,7 +41,6 @@ st.set_page_config(page_title="Punjab Fire Tracker", layout="wide", initial_side
 
 hide_st_style = """
     <style>
-    #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     </style>
 """
