@@ -37,12 +37,14 @@ def get_closest_district(lat, lon):
     return ", ".join(assigned_districts)
 
 # Streamlit Page Configuration
-st.set_page_config(page_title="Punjab Fire Tracker", layout="wide")
+st.set_page_config(page_title="Punjab Fire Tracker", layout="wide", initial_sidebar_state="expanded")
 
 hide_st_style = """
     <style>
     [data-testid="stToolbar"] {visibility: hidden !important;}
     footer {visibility: hidden !important;}
+    header {visibility: visible !important;}
+    [data-testid="collapsedControl"] {visibility: visible !important;}
     </style>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
