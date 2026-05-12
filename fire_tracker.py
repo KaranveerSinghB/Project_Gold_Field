@@ -39,6 +39,12 @@ def get_closest_district(lat, lon):
 # Streamlit Page Configuration
 st.set_page_config(page_title="Punjab Fire Tracker", layout="wide")
 
+hide_header_style = """
+    <style>
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_header_style, unsafe_allow_html=True)
 @st.cache_data(ttl=3600)
 def fetch_punjab_fires(api_key):
     source = 'VIIRS_SNPP_NRT'
